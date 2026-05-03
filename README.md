@@ -5,7 +5,7 @@ A Claude Code slash command (`/cs-notebook`) that converts raw dev session notes
 ## What it does
 
 1. **Parses raw session notes** — extracts script names, file paths, edits made, commits, repo info, and data locations.
-2. **Asks follow-up questions** — if anything is missing (paths, repo, branch, data location, etc.), Claude prompts you with a numbered list of questions before saving.
+2. **Asks follow-up questions** — if anything is missing (paths, repo, branch, data location, etc.), Claude prompts you with a numbered list of questions before saving. Always ends by asking if you have any additional notes to add.
 3. **Generates a structured entry** — organizes everything into a standardized format with tables and categorized next steps.
 4. **Saves a `.docx` file** — uses `python-docx` to write a formatted Word document to `Documents\CS_Notebook\`.
 
@@ -42,6 +42,7 @@ Paste any freeform notes about your coding session. Claude will parse what it ca
 | Data Storage | Paths, databases, buckets, and output formats |
 | Issues & Blockers | Errors and blockers with severity (HIGH / MEDIUM / LOW) and status |
 | Next Steps | Broken into four tiers: Immediate, Short-term, Research/Figure out, Backlog |
+| Additional Notes | Any extra context or observations added interactively before saving |
 | Original Input | Raw notes preserved verbatim |
 
 ## Next Steps format

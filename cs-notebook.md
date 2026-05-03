@@ -87,6 +87,11 @@ Leave a clear `❓ UNKNOWN` placeholder in any cell where the information was no
 
 ---
 
+### Additional Notes
+[Any context, observations, or details the user wants on record that didn't fit elsewhere]
+
+---
+
 ### Original Input
 ```
 $ARGUMENTS
@@ -112,9 +117,13 @@ After displaying the draft entry, check every field that contains `❓ UNKNOWN`.
 
 Only ask about fields that are actually unknown — skip any that were already filled in from the notes.
 
-After the user answers, update all `❓ UNKNOWN` fields with their responses and show the revised entry before proceeding.
+Always include this as the final question, regardless of whether anything is unknown:
 
-If the user explicitly says "skip" or "leave it blank" for any question, replace that `❓ UNKNOWN` with `—` and move on.
+> "Is there anything else you'd like to add to this entry? (Any extra context, observations, or details not covered above — or type 'no' to skip.)"
+
+After the user answers, update all `❓ UNKNOWN` fields with their responses, add any additional notes to the **Additional Notes** section, then show the revised entry before proceeding.
+
+If the user explicitly says "skip", "no", or "leave it blank" for any question, replace that `❓ UNKNOWN` with `—` and move on.
 
 ---
 
